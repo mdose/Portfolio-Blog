@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap'
 
 class MyNav extends Component {
   render () {
@@ -7,19 +9,21 @@ class MyNav extends Component {
       <Navbar inverse collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href='#'>Megan Dosé</a>
+            <Link to='/'>Megan Dosé</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav>
-            <NavItem eventKey={1} href='#'>About Me</NavItem>
-            <NavItem eventKey={2} href='#'>Portfolio</NavItem>
-            <NavItem eventKey={2} href='#'>Blog</NavItem>
-          </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href='#'>Kitties</NavItem>
-            <NavItem eventKey={2} href='#'>Contact</NavItem>
+            <LinkContainer to='/about'>
+              <NavItem eventKey={1}>About</NavItem>
+            </LinkContainer>
+            <LinkContainer to='/portfolio'>
+              <NavItem eventKey={2}>Portfolio</NavItem>
+            </LinkContainer>
+            <LinkContainer to='/contact'>
+              <NavItem eventKey={3}>Contact</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
