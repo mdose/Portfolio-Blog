@@ -11,3 +11,5 @@ class Portfolio extends Component {
 }
 
 export default Portfolio
+
+// TODO: Make grid for page; portfolio item component for each "work"

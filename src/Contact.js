@@ -11,3 +11,6 @@ class Contact extends Component {
 }
 
 export default Contact
+
+// TODO: Figure out how to create email forms; can't send from client side --
+// need to figure out a server for sending emails
