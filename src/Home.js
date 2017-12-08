@@ -4,7 +4,7 @@ class Home extends Component {
   render () {
     return (
       <div>
-      Hi! I'm Megan
+        <img src='/BWworkspace.jpg' alt='workspace' width='100%' />
       </div>
     )
   }
